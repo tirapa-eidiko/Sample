@@ -1,0 +1,162 @@
+insert into INTEGRATION_INSTANCES(instance_id,integration_id,config_json,message_format,user_id,channel_id,status,created_date,updated_date,spark_token_id,integration_token_id) 
+values(#[flowVars.instanceId],#[flowVars.IntegrationId],#[flowVars.configJson],#[flowVars.messageFormat],#[flowVars.userId],#[flowVars.channelId],
+#[flowVars.status],#[flowVars.createdDate],#[flowVars.updatedDate],#[flowVars.tokenId],#[flowVars.integrationTokenId]);
+
+
+
+insert into AUTH_TOKENS(token_id,instance_id,token_system,access_token,refresh_token,expires,refresh_expires) 
+values(#[flowVars.tokenId],#[flowVars.instanceId],
+#[flowVars.tokenSystem],#[flowVars.accessToken],#[flowVars.refreshToken],#[flowVars.expires],#[flowVars.refreshExpires])
+
+post
+-----------------------------------------
+integration id = 1065
+{
+  "instanceId":"sarasu007",
+  "tokenId":"MTAxODBlMDctNTc3MC00MjFkLWJhMTgtOWFiMDk1MmZjYzQwNWFjNmJkZjItNzU2",
+  "tokenSystem":"SPARK",
+  "accessToken":"32ergejwrenfwfwjr3or3j-fskjnegkeglnr-2315245",
+  "expires":"2016-06-03T12:45:30",
+  "refreshToken":"2312313gsgsdgregsgegegw-gerweaewaxd32",
+  "refreshExpires":"2016-06-03T12:45:30",
+  "integrationTokenId":"dfhgvbdfvbfdjvbkldf",
+  "settings": {
+    "room":"aaabbc",
+    "type":"commits",
+    "username":"aaabbc",
+    "password":"aaxcbbb",
+    "clientId":"aacer4ref3",
+    "clientSecret":"dfsfrgweggrger"
+  },
+  "userId":"jjj525645",
+  "status":"ACTIVE",
+  "createdDate":"2016-06-03",
+  "updatedDate":"2016-06-03",
+  "messageFormat":"Trello: #{event} has happened",
+  "channelId":"f649d610-2fbc-11e6-9284-fb6d1199fe37"
+}
+
+response : 1065
+----------------------------------------------------------------
+[  
+   {  
+      "instanceId":"sarasu007",
+      "integrationId":"1065",
+      "configJson":"{\"room\":\"aaabbc\",\"type\":\"commits\",\"username\":\"aaabbc\",\"password\":\"aaxcbbb\",\"clientId\":\"aacer4ref3\",\"clientSecret\":\"dfsfrgweggrger\"}",
+      "messageFormat":"Trello: #{event} has happened",
+      "userId":"jjj525645",
+      "channelId":"f649d610-2fbc-11e6-9284-fb6d1199fe37",
+      "status":"ACTIVE",
+      "createdDate":"2016-06-03",
+      "updatedDate":"2016-06-03",
+      "sparkToken":[  
+         {  
+            "tokenSystem":"SPARK",
+            "accessToken":"32ergejwrenfwfwjr3or3j-fskjnegkeglnr-2315245",
+            "expires":"2016-06-03T12:45:30",
+            "refreshToken":"2312313gsgsdgregsgegegw-gerweaewaxd32",
+            "refreshExpires":"2016-06-03T12:45:30"
+         }
+      ]
+   }
+]
+===========================================================================================================================================
+integration_id = 1056
+
+{
+  "instanceId":"sarasu008",
+  "tokenId":"MTAxODBlMDctNTc3MC00MjFkLWJhMTgtOW",
+  "tokenSystem":"SPARK",
+  "accessToken":"32ergfwjr3or3j-fskjnegkeglnr-2315245",
+  "expires":"2016-06-03T12:45:30",
+  "refreshToken":"2312313gsgsdgregsgegegw-gerweaewaxd32",
+  "refreshExpires":"2016-06-03T12:45:30",
+  "integrationTokenId":"dfhgvbdfvbfdjvbkldf",
+  "settings": {
+    "room":"aaabbc",
+    "type":"commits",
+    "username":"eidiko",
+    "password":"eidiko",
+    "clientId":"aacer4redd",
+    "clientSecret":"dfs545eggrger"
+  },
+  "userId":"kdkfd525645",
+  "status":"ACTIVE",
+  "createdDate":"2016-06-03",
+  "updatedDate":"2016-06-03",
+  "messageFormat":"Trello: #{event} has happened",
+  "channelId":"f649d6106d1199fe37"
+}
+
+response : 1056
+-----------------------------------------------------------
+[  
+   {  
+      "instanceId":"sarasu008",
+      "integrationId":"1056",
+      "configJson":"{\"room\":\"aaabbc\",\"type\":\"commits\",\"username\":\"eidiko\",\"password\":\"eidiko\",\"clientId\":\"aacer4redd\",\"clientSecret\":\"dfs545eggrger\"}",
+      "messageFormat":"Trello: #{event} has happened",
+      "userId":"kdkfd525645",
+      "channelId":"f649d6106d1199fe37",
+      "status":"ACTIVE",
+      "createdDate":"2016-06-03",
+      "updatedDate":"2016-06-03",
+      "sparkToken":[  
+         {  
+            "tokenSystem":"SPARK",
+            "accessToken":"32ergfwjr3or3j-fskjnegkeglnr-2315245",
+            "expires":"2016-06-03T12:45:30",
+            "refreshToken":"2312313gsgsdgregsgegegw-gerweaewaxd32",
+            "refreshExpires":"2016-06-03T12:45:30"
+         }
+      ]
+   }
+]
+============================================================================================================================================================
+integration_id = 9999
+--------------------------
+{
+  "accessToken": "32ergejwrenfwfwjr3or3j-fskjnegkeglnr-2315245",
+  "tokenSystem":"CISCO SPARK",
+  "expires": "2016-06-03T12:45:30",
+  "refreshToken": "2312313gsgsdgregsgegegw-gerweaewaxd32",
+  "refreshExpires": "2016-06-03T12:45:30",
+  "settings": {
+    "room": "aaabbc",
+    "type": "commits",
+    "username": "aaabbc",
+    "password": "aaxcbbb",
+    "clientId": "aacer4ref3",
+    "clientSecret": "dfsfrgweggrger"
+  },
+  "messageFormat": "Trello: #{event} has happened",
+  "channelId": "fsdfsdfsff",
+  "userId":"vbvvbvdfjklldfj"
+}
+
+RESPONSE : 9999
+--------------------------
+{
+  "instanceId": " f6318853-a821-485f-9587-2a79851273a6",
+  "integrationId": "9999",
+  "configJson": "{\"room\":\"aaabbc\",\"type\":\"commits\",\"username\":\"aaabbc\",\"password\":\"aaxcbbb\",\"clientId\":\"aacer4ref3\",\"clientSecret\":\"dfsfrgweggrger\"}",
+  "messageFormat": "Trello: #{event} has happened",
+  "userId": "vbvvbvdfjklldfj",
+  "channelId": "fsdfsdfsff",
+  "status": "ACTIVE",
+  "createdDate": "2016-06-14",
+  "updatedDate": "2016-06-14",
+  "sparkToken": [
+    {
+      "tokenSystem": "CISCO SPARK",
+      "accessToken": "32ergejwrenfwfwjr3or3j-fskjnegkeglnr-2315245",
+      "expires": "2016-06-03T12:45:30",
+      "refreshToken": "2312313gsgsdgregsgegegw-gerweaewaxd32",
+      "refreshExpires": "2016-06-03T12:45:30"
+    }
+  ]
+}
+
+
+==============================================================================
+activate/deactivate  :  localhost:8089/integrations/instances/xyzxyzxyzfbt23t345543/activate
