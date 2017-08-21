@@ -1,0 +1,9 @@
+pydev in eclipse
+-----------------------------------------
+name : pydev
+url : http://pydev.org/updates
+
+
+configure pythin in eclipse
+---------------------------------------------
+c:\progm files\python\python 3.1.2\python.exe
