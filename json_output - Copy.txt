@@ -1,0 +1,25 @@
+{
+  "instanceId": "fdsdasffbt23t345543",
+  "integrationId": "aaabbbcccddd",
+  "configJson": {
+    "room": "aaabbc",
+    "type": "commits",
+    "username": "aaabbc",
+    "password": "aaxcbbb",
+    "clientId": "aacer4ref3",
+    "clientSecret": "dfsfrgweggrger"
+  },
+  "messageFormat": "Trello: #{event} has happened",
+  "userId": "12323t453453sfse",
+  "channelId": "12345gfggrtrtgr",
+  "status": "ACTIVE",
+  "createdDate": "2016-06-03T12:39:50.695-03:00",
+  "updatedDate": "2016-06-03T12:39:50.695-03:00",
+  "sparkToken": {
+    "tokenSystem": "SPARK",
+    "accessToken": "32ergejwrenfwfwjr3or3j-fskjnegkeglnr-2315245",
+    "expires": "2016-06-03T12:39:50.696-03:00",
+    "refreshToken": "2312313gsgsdgregsgegegw-gerweaewaxd32",
+    "refreshExpires": "2016-06-03T12:39:50.696-03:00"
+  }
+}
